@@ -32,16 +32,18 @@
   background: var(--light);
   margin-left: calc(-1 * var(--offset));
   padding: 
-    calc(var(--spacing) * 0.25)
-    var(--spacing)
-    calc(var(--spacing) * 0.25)
+    calc(var(--spacing) * 0.35)
+    calc(var(--spacing) * 1.5)
+    calc(var(--spacing) * 0.35)
     calc(var(--spacing) * 0.25 + var(--offset));
   border-radius: 
     0
-    var(--font-size)
-    var(--font-size)
-    calc(var(--font-size) * 0.5);
+    calc(var(--font-size) * 1.5)
+    calc(var(--font-size) * 1.5)
+    calc(var(--font-size));
   font-weight: bold;
   font-size: calc(var(--font-size) * 0.85);
+  line-height: 110%;
   color: var(--dark);
+  white-space: pre;
 }

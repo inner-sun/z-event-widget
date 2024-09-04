@@ -8,6 +8,7 @@ const DonationGoals: Component = () => {
   return (
     <Layout style={styles.donationGoals}>
       <LogoZEvent class={styles.zeventLogo} />
+      <h1 class={styles.title}>Donation<br/>Goals</h1>
       <GoalsList />
     </Layout>
   )

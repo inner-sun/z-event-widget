@@ -9,11 +9,11 @@ const donationGoals = [
   },
   {
     "amount": 300,
-    "label": "Je fais le profil psychologique des viewers suivant leur main sur LoL"
+    "label": "Je fais le profil psychologique des viewers \nsuivant leur main sur LoL"
   },
   {
     "amount": 500,
-    "label": "Tournoi League of Legends Streamers feat @akhizona et d’autres VS les Viewers"
+    "label": "Tournoi League of Legends Streamers \nfeat @akhizona et d’autres VS les Viewers"
   },
   {
     "amount": 1000,
@@ -21,27 +21,27 @@ const donationGoals = [
   },
   {
     "amount": 1500,
-    "label": "Tierlist de tous les streameurs de l’event que je pense pouvoir 1v1 en octogone"
+    "label": "Tierlist de tous les streameurs de l’event \nque je pense pouvoir 1v1 en octogone"
   },
   {
     "amount": 2000,
-    "label": "Cosplay Furry et Tierlist des animauxque je trouve sexy"
+    "label": "Cosplay Furry et Tierlist des animaux \nque je trouve sexy"
   },
   {
     "amount": 2500,
-    "label": "@RoroowTV m’apprend l’ASMR puis je pratique l’ASMR en ranked sur LOL"
+    "label": "@RoroowTV m’apprend l’ASMR \npuis je pratique l’ASMR en ranked sur LOL"
   },
   {
     "amount": 3000,
-    "label": "Eye tracker sur la vidéo d’Astérion TOP 5 furry et 6 autres vidéos de furry"
+    "label": "Eye tracker sur la vidéo d’Astérion \nTOP 5 furry et 6 autres vidéos de furry"
   },
   {
     "amount": 3500,
-    "label": "Crochet une peluche ZEvent que je fais gagner au top donateur"
+    "label": "Crochet une peluche ZEvent \nque je fais gagner au top donateur"
   },
   {
     "amount": 4000,
-    "label": "Nouvel ArretSurAnime posté sur l’ancienne chaîne un youtubeur manga react à un des vieux episodes"
+    "label": "Nouvel ArretSurAnime posté sur l’ancienne chaîne \nun youtubeur manga react à un des vieux episodes"
   },
   {
     "amount": 5000,
@@ -49,19 +49,19 @@ const donationGoals = [
   },
   {
     "amount": 6000,
-    "label": "Je crée un gilet jaune de manifestant en crochet que je porterais IRL et que je ferais gagner"
+    "label": "Je crée un gilet jaune de manifestant en crochet \nque je porterais IRL et que je ferais gagner"
   },
   {
     "amount": 10000,
-    "label": "Je lis le livre -18 de Marlène Schiappa en stream et je fais les bruitages"
+    "label": "Je lis le livre -18 de Marlène Schiappa en stream \net je fais les bruitages"
   },
   {
     "amount": 20000,
-    "label": "Je crée mon propre hentai furry et j’intègre les viewers dans l’histoire"
+    "label": "Je crée mon propre hentai furry \net j’intègre les viewers dans l’histoire"
   },
   {
     "amount": 100000,
-    "label": "Je ferme ma chaine Twitchet trouve un vrai métier"
+    "label": "Je ferme ma chaine Twitch \net trouve un vrai métier"
   }
 ]
 
