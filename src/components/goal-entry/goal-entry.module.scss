@@ -5,8 +5,17 @@
   align-items: start;
 
   &.reached{
-    .label{
+    .amount{
       background: linear-gradient(176deg, #75cb54 -33%, #2e6916 60%, #59AF37 100%);
+      box-shadow: 0 0 1vh 0 rgba(0, 0, 0, 0.5);
+      &, .currency{
+        color: var(--light);
+      }
+    }
+    .label{
+      
+      background: rgba(0,0,0,0.35);
+      backdrop-filter: blur(16px);
       color: var(--light);
     }
   }
