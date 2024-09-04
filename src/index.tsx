@@ -1,6 +1,6 @@
 /* @refresh reload */
 import { render } from 'solid-js/web'
-import DonationGoals from '~/views/DonationGoals'
+import DonationGoals from '~/views/donation-goals/donation-goals'
 
 const root = document.getElementById('root')
 

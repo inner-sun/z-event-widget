@@ -17,17 +17,10 @@
   --sides: var(--col);
 
   /* Colors */
-  --mono-900: #0D0E10;
-  --mono-700: #36185B;
-  --mono-500: #664D8B;
-  --mono-400: #687CAF;
-  --mono-300: #b7cde1;
-  --mono-100: #e4eeee;
-  --mono-50: #eff3f5;
-  --mono-0: #FFFFFF;
-  --accent: #2B71F8;
-  --positive: #6eaa4b;
-  --negative: #a94b3c;
+  --dark: #000;
+  --light: #fff;
+  --light-transparent: #ffffff26;
+  --accent: #59AF37;
 
   /* Fonts */
   --regular-font: "Inter", sans-serif;
@@ -48,6 +41,9 @@
   --spacing-4: 12px;
   --spacing-6: 16px;
   --spacing-8: 18px;
+  --spacing-16: 5vh;
+  --spacing-24: 18px;
+  --spacing-32: 18px;
 
   /* Tokens */
   --radius-small: 6px;

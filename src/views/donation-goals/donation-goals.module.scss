@@ -1,0 +1,11 @@
+.donationGoals{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-16);
+  background: url(/src/assets/images/background.jpg) no-repeat center top / cover;
+}
+
+.zeventLogo{
+  width: auto;
+  height: 15vh;
+}
