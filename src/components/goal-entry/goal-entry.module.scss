@@ -3,6 +3,13 @@
   --spacing: calc(var(--font-size) * 0.75);
   display: flex;
   align-items: start;
+
+  &.reached{
+    .label{
+      background: linear-gradient(176deg, #75cb54 -33%, #2e6916 60%, #59AF37 100%);
+      color: var(--light);
+    }
+  }
 }
 
 .amount{
