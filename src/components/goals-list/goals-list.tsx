@@ -4,7 +4,7 @@ import GoalEntry from '~/components/goal-entry/goal-entry'
 import { GoalsListProps } from '~/components/goals-list/goals-list.interfaces'
 import styles from '~/components/goals-list/goals-list.module.scss'
 
-const GoalsList: Component<GoalsListProps> = ({ raisedAmount }) => {
+const GoalsList: Component<GoalsListProps> = ({ amount }) => {
   return (
     <div class={styles.container}>
       <h1 class={styles.title}>Donation Goals</h1>
@@ -15,7 +15,7 @@ const GoalsList: Component<GoalsListProps> = ({ raisedAmount }) => {
             <GoalEntry
               amount={entry.amount}
               label={entry.label}
-              reached={raisedAmount >= entry.amount}
+              reached={amount >= entry.amount}
             />
           )}
         </For>
