@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: var(--spacing-2);
+  gap: var(--spacing-4);
 }
 
 .goalsList{
@@ -12,23 +12,15 @@
   max-width: 80vw;
 }
 
-.raisedAmount{
-  justify-self: start;
+.title{
   background-color: var(--dark);
   border-radius: 100vh 100vh 0 100vh;
-  box-shadow: 0 0 1vh 0 rgba(0, 0, 0, 0.5);
-  padding: 1.5vh 3.25vh 1.5vh 3vh;
+  box-shadow: 0 0 1vh 0 rgba(0,0,0,0.5);
+  padding: 1.25vh 2.5vh 1.25vh 2vh;
   color: var(--light);
   font-weight: 900;
+  font-size: 2.5vh;
+  line-height: 90%;
+  letter-spacing: -0.1vh;
   text-transform: uppercase;
-
-  .label{
-    font-size: 2vh;
-    letter-spacing: -0.1vh;
-  }
-
-  .value{
-    font-size: 3vh;
-    color: var(--accent);
-  }
 }

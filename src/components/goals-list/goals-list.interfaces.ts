@@ -1,3 +1,3 @@
 export interface GoalsListProps {
-  prop: string
+  raisedAmount: number
 }

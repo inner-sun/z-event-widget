@@ -1,0 +1,23 @@
+.raisedAmount{
+  position: absolute;
+  top: 2.5vh;
+  right: 2.5vh;
+  justify-self: start;
+  background-color: var(--dark);
+  border-radius: 100vh 100vh 0 100vh;
+  box-shadow: 0 0 1vh 0 rgba(0, 0, 0, 0.5);
+  padding: 1.5vh 3.25vh 1.5vh 3vh;
+  color: var(--light);
+  font-weight: 900;
+  text-transform: uppercase;
+
+  .label{
+    font-size: 2.75vh;
+    letter-spacing: -0.1vh;
+  }
+
+  .value{
+    font-size: 3.75vh;
+    color: var(--accent);
+  }
+}

@@ -6,22 +6,6 @@
   background: url(/src/assets/images/background.jpg) no-repeat center top / cover;
 }
 
-.title{
-  position: absolute;
-  top: 2.5vh;
-  right: 2.5vh;
-  background-color: var(--dark);
-  border-radius: 100vh 100vh 100vh 0;
-  box-shadow: 0 0 1vh 0 rgba(0,0,0,0.5);
-  padding: 1.5vh 3.5vh 1.5vh 3vh;
-  color: var(--light);
-  font-weight: 900;
-  font-size: 3vh;
-  line-height: 90%;
-  letter-spacing: -0.1vh;
-  text-transform: uppercase;
-}
-
 .zeventLogo{
   position: absolute;
   right: 2.5vh;
