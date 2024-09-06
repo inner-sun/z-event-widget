@@ -1,6 +1,7 @@
 import { Component, createEffect } from 'solid-js'
 import { MochiAnimationProps } from '~/components/mochi-animation/mochi-animation.interfaces'
 import styles from '~/components/mochi-animation/mochi-animation.module.scss'
+import MochiPaysan from '~/assets/images/mochi-paysan.png'
 
 const MochiAnimation: Component<MochiAnimationProps> = ({ animate, setAnimate }) => {
   const cssClasses = () => ({
@@ -18,7 +19,7 @@ const MochiAnimation: Component<MochiAnimationProps> = ({ animate, setAnimate })
 
   return (
     <img
-      src='/src/assets/images/mochi-paysan.png'
+      src={MochiPaysan}
       classList={cssClasses()}
     />
   )

@@ -27,9 +27,11 @@ export default defineConfig({
     solidPlugin(),
   ],
   server: {
-    port: 3000,
+    port: 3000
   },
   build: {
+    outDir: 'docs',
     target: 'esnext',
   },
+  base: './'
 })
