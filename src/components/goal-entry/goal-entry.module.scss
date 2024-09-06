@@ -1,19 +1,103 @@
+@keyframes shine{
+  0%{
+    transform: scale(0.5) rotate(0);
+    opacity: 0;
+  }
+  10%{
+    opacity: 0.5;
+  }
+  50%{
+    transform: scale(1.5) rotate(350deg);
+  }
+  90%{
+    transform: scale(0.5) rotate(350deg);
+    opacity: 0.66;
+  }
+  95%{
+    transform: scale(0.5) rotate(360deg);
+    opacity: 0.66;
+  }
+  100%{
+    transform: scale(0.5) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes shineDim{
+  0%{
+    transform: scale(0.5) rotate(0);
+    opacity: 0;
+  }
+  10%{
+    opacity: 0.25;
+  }
+  50%{
+    transform: scale(1.25) rotate(-350deg);
+  }
+  90%{
+    transform: scale(0.5) rotate(-350deg);
+    opacity: 0.33;
+  }
+  95%{
+    transform: scale(0.5) rotate(-360deg);
+    opacity: 0.33;
+  }
+  100%{
+    transform: scale(0.5) rotate(-360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes highlight{
+  0%, 100%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.35);
+  }
+}
+
 .goalEntry{
   --font-size: 2.25vh;
   --spacing: calc(var(--font-size) * 0.75);
+  --animation-duration: 5s;
   display: flex;
   align-items: start;
 
   &.reached{
-    .amount{
+    position: relative;
+    z-index: 100;
+    transform-origin: 25% 50%;
+    animation: var(--animation-duration) highlight cubic-bezier(0.85, 0, 0.15, 1) both;
+
+    .amount .value{
+      position: relative;
       background: linear-gradient(176deg, #75cb54 -33%, #2e6916 60%, #59AF37 100%);
       box-shadow: 0 0 1vh 0 rgba(0, 0, 0, 0.5);
       &, .currency{
         color: var(--light);
       }
     }
+
+    .shineAnimation{
+      --size: 10vh;
+      position: absolute;
+      z-index: -1;
+      content: '';
+      top: calc(50% - (var(--size) / 2));
+      left: calc(50% - (var(--size) / 2));
+      width: var(--size);
+      height: var(--size);
+      background: url(/src/assets//images/shine.svg) no-repeat center center / contain;
+      animation: var(--animation-duration) shine both;
+
+      &.delayed{
+        animation-delay: 0.5s;
+        animation-name: shine;
+      }
+    }
+
     .label{
-      
       background: rgba(0,0,0,0.35);
       backdrop-filter: blur(16px);
       color: var(--light);
@@ -23,20 +107,24 @@
 
 .amount{
   position: relative;
-  z-index: 1;
-  background: var(--dark);
-  padding: 
-    calc(var(--spacing) * 0.4)
-    calc(var(--spacing) * 0.8);
-  border-radius: var(--font-size);
-  box-shadow: 0 0 0 1px var(--light-transparent);
-  font-weight: 900;
-  font-size: var(--font-size);
-  color: var(--light);
-  white-space: nowrap;
 
-  .currency{
-    color: var(--accent);
+  .value{
+    position: relative;
+    z-index: 1;
+    background: var(--dark);
+    padding: 
+      calc(var(--spacing) * 0.4)
+      calc(var(--spacing) * 0.8);
+    border-radius: var(--font-size);
+    box-shadow: 0 0 0 1px var(--light-transparent);
+    font-weight: 900;
+    font-size: var(--font-size);
+    color: var(--light);
+    white-space: nowrap;
+
+    .currency{
+      color: var(--accent);
+    }
   }
 }
 

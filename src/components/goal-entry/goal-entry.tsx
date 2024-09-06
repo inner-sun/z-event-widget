@@ -11,7 +11,11 @@ const GoalEntry: Component<GoalEntryProps> = ({ amount, label, reached }) => {
   return (
     <div classList={cssClasses()}>
       <div class={styles.amount}>
-        {amount} <span class={styles.currency}>€</span>
+        <div class={styles.value}>
+          {amount} <span class={styles.currency}>€</span>
+          <div class={styles.shineAnimation} />
+        </div>
+        <div class={[styles.shineAnimation, styles.delayed].join(' ')} />
       </div>
       <div class={styles.label}>
         {label}

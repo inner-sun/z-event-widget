@@ -5,21 +5,35 @@ import GoalsList from '~/components/goals-list/goals-list'
 import { donationGoals } from '~/assets/data/donation-goals'
 import RaisedAmount from '~/components/raised-amount/raised-amount'
 import { getZeventAmount } from '~/services/zevent-amount'
+import MochiAnimation from '~/components/mochi-animation/mochi-animation'
 
 const DonationGoals: Component = () => {
-  const [liveAmount, { refetch: refetchLiveAmount }] = createResource(getZeventAmount('lasainte'))
+  const [liveAmount, { mutate: mutateAmount, refetch: refetchAmount }] = createResource(getZeventAmount('lasainte'))
   const [amount, setAmount] = createSignal(0)
+  const [animate, setAnimate] = createSignal(false)
 
   createEffect(() => {
-    const lastVersion = liveAmount.latest ?? 0
-    const shouldUpdate = lastVersion > amount()
+    console.log('effect')
+    const currentAmount = amount()
+    const newAmount = liveAmount.latest ?? 0
+    const shouldUpdate = newAmount !== currentAmount
+    console.log({newAmount, currentAmount})
     if(shouldUpdate){
-      setAmount(lastVersion)
+      setAmount(newAmount)
+    }
+
+    const lastReachedGoal = donationGoals.slice().reverse().find(entry => entry.amount <= currentAmount)
+    const newReachedGoal = donationGoals.slice().reverse().find(entry => entry.amount <= newAmount)
+    const hasReachedNewGoal = lastReachedGoal !== newReachedGoal
+    console.log(lastReachedGoal, newReachedGoal)
+    if(hasReachedNewGoal){
+      console.log("setAnimate=true")
+      setAnimate(true)
     }
   })
 
   onMount(() => {
-    setInterval(refetchLiveAmount, 5 * 60000)
+    // setInterval(refetchAmount, 60000)
 
     window.addEventListener('keyup', (event) => {
       const currentAmount = amount()
@@ -31,7 +45,7 @@ const DonationGoals: Component = () => {
         newGoal = donationGoals.slice().reverse().find(entry => entry.amount < currentAmount)
       }
       if (newGoal) {
-        setAmount(newGoal.amount)
+        mutateAmount(newGoal.amount)
       }
     })
   })
@@ -40,6 +54,7 @@ const DonationGoals: Component = () => {
     <Layout style={styles.donationGoals}>
       <RaisedAmount amount={amount()} />
       <GoalsList amount={amount()} />
+      <MochiAnimation animate={animate()} setAnimate={setAnimate}  />
     </Layout>
   )
 }
