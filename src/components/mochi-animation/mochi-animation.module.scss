@@ -25,7 +25,7 @@
   height: 50vh;
   top: 100%;
   left: 100%;
-  --offset: -43vh;
+  --offset: -50vh;
   
   &.animate{
     animation: 5s peek cubic-bezier(0.85, 0, 0.15, 1) both;

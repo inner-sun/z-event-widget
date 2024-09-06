@@ -67,7 +67,7 @@
   &.reached{
     position: relative;
     z-index: 100;
-    transform-origin: 25% 50%;
+    transform-origin: 66% 50%;
     animation: var(--animation-duration) highlight cubic-bezier(0.85, 0, 0.15, 1) both;
 
     .amount .value{
