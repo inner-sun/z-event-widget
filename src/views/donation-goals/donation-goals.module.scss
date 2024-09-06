@@ -13,3 +13,15 @@
   width: auto;
   height: 10vh;
 }
+
+@media (orientation: landscape){
+  .donationGoals{
+    width: 50vw;
+  }
+}
+
+@media (max-width: 1280px){
+  .donationGoals{
+    width: 100vw;
+  }
+}

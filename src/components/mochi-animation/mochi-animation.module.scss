@@ -23,8 +23,8 @@
   position: absolute;
   z-index: 100;
   height: 50vh;
-  top: 100vh;
-  left: 100vw;
+  top: 100%;
+  left: 100%;
   --offset: -43vh;
   
   &.animate{
