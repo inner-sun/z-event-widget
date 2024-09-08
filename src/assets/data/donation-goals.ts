@@ -60,6 +60,10 @@ const donationGoals = [
     "label": "Je lis le livre -18 de Marlène Schiappa en stream \net je fais les bruitages"
   },
   {
+    "amount": 12000,
+    "label": "Akhizona leak son clash de rap en direct"
+  },
+  {
     "amount": 15000,
     "label": "Je crée mon propre hentai furry \net j’intègre les viewers dans l’histoire"
   },
