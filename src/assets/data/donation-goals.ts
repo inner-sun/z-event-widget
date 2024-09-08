@@ -52,6 +52,10 @@ const donationGoals = [
     "label": "Je crée un gilet jaune de manifestant en crochet \nque je porterais IRL et que je ferais gagner"
   },
   {
+    "amount": 9000,
+    "label": "Mon déguisement Furry devient ma photo de profil"
+  },
+  {
     "amount": 10000,
     "label": "Je lis le livre -18 de Marlène Schiappa en stream \net je fais les bruitages"
   },
