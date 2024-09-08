@@ -61,7 +61,7 @@ const donationGoals = [
   },
   {
     "amount": 12000,
-    "label": "Akhizona leak son clash de rap en direct"
+    "label": "Akhizonah leak son clash de rap en direct"
   },
   {
     "amount": 15000,
