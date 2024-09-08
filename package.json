@@ -11,6 +11,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^22.5.4",
     "babel-plugin-solid-undestructure": "^1.1.0",
     "solid-devtools": "^0.29.2",
     "typescript": "^5.3.3",

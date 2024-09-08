@@ -20,10 +20,9 @@ const Challenge: Component = () => {
       setAmount(newAmount)
     }
 
-    const newNextStep = Math.ceil(newAmount / 100) * 100
-    const hasReachedNextStep = newNextStep !== nextStep()
+    const hasReachedNextStep = amount() >= nextStep()
     if(hasReachedNextStep){
-      setNextStep(newNextStep)
+      setNextStep((Math.ceil(amount() / 100) * 100))
       setAnimate(true)
     }
   })
@@ -32,11 +31,9 @@ const Challenge: Component = () => {
     setInterval(refetchAmount, 60000)
 
     window.addEventListener('click', (event) => {
-      const currentAmount = amount()
-      const newGoal = donationGoals.find(entry => entry.amount > currentAmount)
-      if (newGoal) {
-        mutateAmount(newGoal.amount)
-      }
+      const randomIncrement = amount() + (Math.random() * 75)
+      mutateAmount(randomIncrement)
+      console.log({ randomIncrement })
     })
   })
 
