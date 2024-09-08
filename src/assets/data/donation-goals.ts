@@ -68,6 +68,10 @@ const donationGoals = [
     "label": "Je crée mon propre hentai furry \net j’intègre les viewers dans l’histoire"
   },
   {
+    "amount": 20000,
+    "label": "Combat de Boxe contre RoroowTV"
+  },
+  {
     "amount": 100000,
     "label": "Je ferme ma chaine Twitch \net trouve un vrai métier"
   }
