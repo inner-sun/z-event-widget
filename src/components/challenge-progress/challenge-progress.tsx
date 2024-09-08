@@ -10,7 +10,7 @@ const ChallengeProgress: Component<ChallengeProgressProps> = ({ amount, nextStep
       amountInHundreds,
       progress
     })
-    return `${Math.floor(progress)}%`
+    return `${Math.round(progress)}%`
   }
 
   return (
