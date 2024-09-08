@@ -6,7 +6,7 @@ const getZeventAmount = (streamerId: string) => async () => {
   const query = await fetch(url)
   const result: ZEventResponse = await query.json()
   const streamer = result.live.find(streamer => streamer.twitch === streamerId)
-  const amount = streamer?.donationGoal.donationAmount.number ?? 0
+  const amount = Math.round(streamer?.donationGoal.donationAmount.number ?? 0)
   return amount
 }
 

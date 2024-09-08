@@ -1,4 +1,4 @@
-import{i as b,c as A,a as p,b as c,t as L,d as g,F as j,e as $,s as C,f as x,g as E,o as M,L as D,h as q,r as T}from"./zevent-amount-BO0trWLQ.js";const J="_donationGoals_moeku_1",z="_zeventLogo_moeku_8",N={donationGoals:J,zeventLogo:z},v=[{amount:50,label:"Je montre Mochi et Matcha en cam"},{amount:100,label:"On découvre Incel Simulator"},{amount:300,label:`Je fais le profil psychologique des viewers 
+import{i as b,c as A,a as p,b as c,t as L,d as g,F as j,e as $,s as C,f as x,g as E,o as M,L as D,h as q,r as T}from"./zevent-amount-2LFYkMai.js";const J="_donationGoals_moeku_1",z="_zeventLogo_moeku_8",N={donationGoals:J,zeventLogo:z},v=[{amount:50,label:"Je montre Mochi et Matcha en cam"},{amount:100,label:"On découvre Incel Simulator"},{amount:300,label:`Je fais le profil psychologique des viewers 
 suivant leur main sur LoL`},{amount:500,label:`Tournoi League of Legends Streamers 
 feat @akhizona et d’autres VS les Viewers`},{amount:1e3,label:"Run No-Death Dark Souls 2"},{amount:1500,label:`Tierlist de tous les streameurs de l’event 
 que je pense pouvoir 1v1 en octogone`},{amount:2e3,label:`Cosplay Furry et Tierlist des animaux 
